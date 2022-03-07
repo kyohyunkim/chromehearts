@@ -352,8 +352,8 @@ footer ul .li3 a {
     transition: .5s;
   }
   header ul .nav img.active {
-    -webkit-transform: unset;
-            transform: unset;
+    -webkit-transform: translateY(100px) rotate(180deg);
+            transform: translateY(100px) rotate(180deg);
   }
   header ul .nav .big_ul {
     padding-top: 60px;
