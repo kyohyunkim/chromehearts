@@ -1,15 +1,89 @@
+main {
+  height: 100vh;
+}
+
 img {
   -webkit-user-drag: none;
 }
 
 .wrap {
-  width: 500px;
+  width: 100%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.left_box {
+  width: 15%;
+}
+
+.detail {
+  width: 15%;
+  margin-top: 100px;
+}
+
+.detail ul {
+  text-align: left;
+}
+
+.detail ul li {
+  margin-bottom: 10px;
+}
+
+.detail ul .name {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.detail ul .price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #666;
+}
+
+.detail ul .bag {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image: url("https://kyohyunkim.github.io/chromhearts/img/cross-stroke.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 164px;
+  padding: 12px;
+  margin-left: -20px;
+  text-align: center;
+}
+
+.detail ul .details {
+  font-size: 14px;
+}
+
+.detail ul .details p {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.detail ul .details ul {
+  padding-left: 16px;
+}
+
+.detail ul .details ul li {
+  list-style-type: disc;
+  font-weight: 500;
+  margin-bottom: 0;
 }
 
 .swiper {
-  width: 100%;
+  max-width: 30%;
   height: 100%;
+  margin: 0 20px;
 }
 
 .swiper-slide {
