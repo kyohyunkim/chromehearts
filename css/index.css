@@ -37,7 +37,7 @@ body {
 
 .bg_fixed {
   z-index: -1;
-  background-image: url("https://kyohyunkim.github.io/chromhearts/img/main/bg-ch.jpg");
+  background-image: url("https://kyohyunkim.github.io/chromehearts/img/main/bg-ch.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -293,7 +293,7 @@ footer ul .li3 a {
   }
   .bg_fixed {
     z-index: -1;
-    background-image: url("https://kyohyunkim.github.io/chromhearts/img/main/bg-home-mobile.jpg");
+    background-image: url("https://kyohyunkim.github.io/chromehearts/img/main/bg-home-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
