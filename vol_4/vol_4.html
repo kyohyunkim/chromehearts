@@ -13,31 +13,15 @@
     <script type="text/javascript" src="./extras/modernizr.2.5.3.min.js"></script>
     <script type="text/javascript" src="./lib/hash.js"></script>
     <script defer src="./js/about.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+    <script defer src="../js/common.js"></script>
 </head>
 <body>
     <div class="bg_fixed"></div>
-    <header>
-        <ul>
-            <li class="nav">
-                <img src="../img/main/cross.svg" id="cross_img">
-                <ul class="big_ul" id="big_ul">
-                    <li class="big_li">
-                        <span id="shop_btn">shop</span>
-                        <ul class="small_ul" id="small_ul">
-                            <li><a href="../shop_magazine.html">magazine</a></li>
-                            <li><a href="../shop_oddities.html">oddities</a></li>
-                        </ul>
-                    </li>
-                    <li class="big_li"><a>locations</a></li>
-                    <li class="big_li"><a href="https://kyohyunkim.github.io/chromhearts/magazine.html">magazine</a></li>
-                    <li class="big_li"><a href="https://kyohyunkim.github.io/chromhearts/index.html">login</a></li>
-                </ul>
-            </li>
-            <li class="nullbox">a</li>
-            <li class="logo"><a href="https://kyohyunkim.github.io/chromhearts/index.html"><img src="../img/main/ch-scroll.svg"></a></li>
-            <li class="cart"><a>login /</a> <a>bag</a> <span>0</span></li>
-        </ul>
-    </header>
+    <header><div class="header_wrap"></div></header>
     <main>
         <div class="sec_1">
             <div id="canvas">
@@ -55,39 +39,8 @@
             </div>  <!-- canvas end -->
         </div> <!-- sec-1 end -->
         <div class="allissues"><a href="../magazine.html">ALL ISSUES</a></div>
-        </main>
-        
-        
-        
-        <footer>
-            <ul>
-                <li class="li1">
-                    <a>Terms</a>
-                    <a>CA Supply Chain Act</a>
-                    <a>Privacy</a>
-                </li>
-                <li class="li2"></li>
-                <li class="li_absolute">
-                    <a href="https://instagram.com/chromeheartsofficial/"><img src="../img/main/chrom_insta.svg"></a>
-                </li>
-                <li class="li3">
-                    <a>General</a>
-                    <a>Contact</a>
-                    <a>kr <img src="../img/main/kr.svg"></a>
-                </li>
-            </ul>
-            <div>© 2022 Chrome Hearts LLC. All rights reserved</div>
-        </footer>
-
-    <script>
-        cross_img.addEventListener('click',function(){
-            cross_img.classList.toggle('active');
-            big_ul.classList.toggle('active');
-        });
-        shop_btn.addEventListener('click',function(){
-            small_ul.classList.toggle('active');
-        });
-    </script>
+    </main>
+    <footer><div class="footer_wrap"></div></footer>
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script> 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
