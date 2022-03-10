@@ -3,7 +3,6 @@ body{
 	-ms-overflow-style: none; 
 } ::-webkit-scrollbar { display: none; }
 
-footer{position:relative!important;}
 .sec_1{
     position: relative;
 }
