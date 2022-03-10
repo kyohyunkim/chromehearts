@@ -161,7 +161,13 @@ footer{
     .sec_1{transform: translateY(0px);}
 }
 @media (min-width:321px)and (max-width:700px){
-    main{transform: translateY(60px);}
+    .allissues{
+        text-align: center; font-size: 13px; padding:30px 0;
+        position: absolute;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    main{transform: translateY(60px);height: 100%;}
     .sec_1{transform: translateY(0px);}
     body{position:unset;height: unset;}
     .bg_fixed{
