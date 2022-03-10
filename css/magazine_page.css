@@ -6,6 +6,14 @@
   src: url(../img/Old-English.ttf) format("truetype");
 }
 
+footer {
+  position: relative;
+}
+
+main {
+  padding-bottom: 50px;
+}
+
 main div {
   margin-top: 0px;
 }
@@ -51,6 +59,10 @@ main div ul li p:nth-of-type(3) {
 }
 
 @media (min-width: 300px) and (max-width: 700px) {
+  main {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
   main div {
     margin-top: 0px;
   }
@@ -89,9 +101,5 @@ main div ul li p:nth-of-type(3) {
     font-weight: 500;
     padding: 10px;
   }
-}
-
-footer {
-  position: relative !important;
 }
 /*# sourceMappingURL=magazine_page.css.map */

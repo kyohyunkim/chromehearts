@@ -24,9 +24,11 @@ body{height:100vh; position: relative;}
     width:100%;
     height: 100%;
 }
-main{height: 100%;}
+main{
+    transform: translateY(100px);
+}
 header{
-    padding:33px 15px;
+    padding:33px 0px;
     position: absolute;
     top:0;left:0;width:100%;
     ul{
@@ -38,6 +40,7 @@ header{
         .nav{
             z-index:99999;
             position: fixed;
+            left:15px;
             cursor: pointer;
             min-width: 25%;
             img{width:30px;transition: .5s;}
@@ -94,6 +97,7 @@ header{
             }
         }
         .cart{
+            transform: translateX(-15px);
             text-align: right;
             min-width: 25%;
             font-size: .875rem;
@@ -164,8 +168,10 @@ footer{
     }
     header{
         padding:0;
+        position: absolute;
+        top:0;left:0;width:100%;
         ul{
-            padding:20px 15px;
+            padding:20px 0px;
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
@@ -174,6 +180,7 @@ footer{
                 z-index:99999;
                 position: fixed;
                 cursor: pointer;
+                left:15px;
                 img{width:30px;transition: .5s;}
                 img.active{
                     transform: translateY(50px) rotate(180deg);
@@ -237,6 +244,7 @@ footer{
                 }
             }
             .cart{
+                transform: translateX(-15px);
                 text-align: right;
                 min-width: 25%;
                 font-size: .875rem;

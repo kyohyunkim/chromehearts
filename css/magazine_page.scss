@@ -6,8 +6,9 @@
     font-weight: 700;
     src: url(../img/Old-English.ttf) format("truetype")
 }
-
+footer{position:relative;}
 main{
+    padding-bottom:50px;
     div{
         margin-top: 0px;
         ul{
@@ -42,6 +43,7 @@ main{
 }
 @media (min-width:300px)and (max-width:700px){
     main{
+        transform: translateY(100px);
         div{
             margin-top: 0px;
             ul{
@@ -75,4 +77,3 @@ main{
         }
     }
 }
-footer{position:relative!important;}

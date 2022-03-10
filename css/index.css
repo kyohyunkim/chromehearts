@@ -47,11 +47,12 @@ body {
 }
 
 main {
-  height: 100%;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
 }
 
 header {
-  padding: 33px 15px;
+  padding: 33px 0px;
   position: absolute;
   top: 0;
   left: 0;
@@ -74,6 +75,7 @@ header ul {
 header ul .nav {
   z-index: 99999;
   position: fixed;
+  left: 15px;
   cursor: pointer;
   min-width: 25%;
 }
@@ -174,6 +176,8 @@ header ul .logo img {
 }
 
 header ul .cart {
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
   text-align: right;
   min-width: 25%;
   font-size: .875rem;
@@ -314,9 +318,13 @@ footer ul .li3 a {
   }
   header {
     padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
   header ul {
-    padding: 20px 15px;
+    padding: 20px 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -332,6 +340,7 @@ footer ul .li3 a {
     z-index: 99999;
     position: fixed;
     cursor: pointer;
+    left: 15px;
   }
   header ul .nav img {
     width: 30px;
@@ -433,6 +442,8 @@ footer ul .li3 a {
             transform: translateY(-20%);
   }
   header ul .cart {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
     text-align: right;
     min-width: 25%;
     font-size: .875rem;
