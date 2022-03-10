@@ -3,6 +3,7 @@ img {
     -webkit-user-drag: none;
 }
 .wrap{
+    transform: translateY(15%);
     width:100%; margin:0 auto;
     display: flex;
     justify-content: center;
