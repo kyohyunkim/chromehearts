@@ -8,31 +8,11 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/shop.css"/>
     <link href="css/index.css" rel="stylesheet">
+    <script defer src="js/common.js"></script>
 </head>
 <body>
     <div class="bg_fixed"></div>
-    <header>
-      <ul>
-          <li class="nav">
-              <img src="img/main/cross.svg" id="cross_img">
-              <ul class="big_ul" id="big_ul">
-                  <li class="big_li">
-                      <span id="shop_btn">shop</span>
-                      <ul class="small_ul" id="small_ul">
-                          <li><a href="https://kyohyunkim.github.io/chromhearts/shop_magazine.html">magazine</a></li>
-                            <li><a href="https://kyohyunkim.github.io/chromhearts/shop_oddities.html">oddities</a></li>
-                      </ul>
-                  </li>
-                  <li class="big_li"><a>locations</a></li>
-                  <li class="big_li"><a href="https://kyohyunkim.github.io/chromhearts/magazine.html">magazine</a></li>
-                  <li class="big_li"><a href="https://kyohyunkim.github.io/chromhearts/index.html">login</a></li>
-              </ul>
-          </li>
-          <li class="nullbox">a</li>
-          <li class="logo"><a href="https://kyohyunkim.github.io/chromhearts/index.html"><img src="img/main/ch-scroll.svg"></a></li>
-          <li class="cart"><a>login /</a> <a>bag</a> <span>0</span></li>
-      </ul>
-    </header>
+    <header><div class="header_wrap"></div></header>
     <main>
         <!--<div class="chrome"></div>-->
         <div class="wrap">
@@ -82,27 +62,8 @@
             </div>
         </div>
       </main>
-      <footer>
-          <ul>
-              <li class="li1">
-                  <a>Terms</a>
-                  <a>CA Supply Chain Act</a>
-                  <a>Privacy</a>
-              </li>
-              <li class="li2"></li>
-              <li class="li_absolute">
-                  <a href="https://instagram.com/chromeheartsofficial/"><img src="img/main/chrom_insta.svg"></a>
-              </li>
-              <li class="li3">
-                  <a>General</a>
-                  <a>Contact</a>
-                  <a>kr <img src="img/main/kr.svg"></a>
-              </li>
-          </ul>
-          <div>© 2022 Chrome Hearts LLC. All rights reserved</div>
-      </footer>
+      <footer><div class="footer_wrap"></div></footer>
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
       <script>
         var swiper = new Swiper(".mySwiper", {
           spaceBetween: 30,
@@ -115,14 +76,6 @@
             el: ".swiper-pagination",
             clickable: true,
           },
-        });
-        
-        cross_img.addEventListener('click',function(){
-            cross_img.classList.toggle('active');
-            big_ul.classList.toggle('active');
-        });
-        shop_btn.addEventListener('click',function(){
-            small_ul.classList.toggle('active');
         });
 /*
         const circle = document.querySelector(".chrome");
