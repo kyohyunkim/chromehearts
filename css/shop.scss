@@ -27,9 +27,16 @@ img {
         }
         .details{
             font-size: 14px;
-            p{font-weight: 500;margin-bottom: 5px;}
+            cursor: pointer;
+            p{
+                font-weight: 500;margin-bottom: 5px;margin-top:10px;
+                &::after{content:"+";padding-left:5px;}
+                &.active::after{content:"-";padding-left:5px;}
+            }
             ul{
-                padding-left:16px;
+                display: none;
+                padding-left:0px;
+                &.active{display: block;}
                 li{list-style-type: disc;font-weight: 500;margin-bottom: 0;}
             }
         }
@@ -85,4 +92,108 @@ width: 100%;
     transform: translate(10px,10px);
     background-image: url("https://kyohyunkim.github.io/chromhearts/img/chrom_line_icon.svg");
     transition: .1s;
+}
+
+@media (min-width:300px)and (max-width:1000px){
+main{height:90vh;}
+footer{position:relative!important;}
+.wrap{
+    padding-bottom: 100px;
+    transform: translateY(0px);
+    width:100%; margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.left_box{width:15%;display: none;}
+.detail{
+    width:70%;
+    margin-top: 50px;
+    margin:50px auto;
+    ul{
+        text-align: center;
+        li{margin-bottom:10px;}
+        .name{font-size: 16px;font-weight: 700;}
+        .price{font-size: 16px; font-weight: 700;color:#666;}
+        .bag{
+            font-size: 16px;font-weight: 700;text-transform: uppercase;
+            background-image: url("https://kyohyunkim.github.io/chromhearts/img/cross-stroke.svg");
+            background-repeat: no-repeat;background-position: center center;
+            width:164px;padding:12px;
+            margin:0 auto;
+            text-align: center;
+        }
+        .details{
+            font-size: 14px;
+            cursor: pointer;
+            p{
+                font-weight: 500;margin-bottom: 5px;margin-top:10px;
+                &::after{content:"+";padding-left:5px;}
+                &.active::after{content:"-";padding-left:5px;}
+            }
+            ul{
+                display: none;
+                padding-left:0px;
+                &.active{display: block;}
+                li{list-style-type: disc;font-weight: 500;margin-bottom: 0;}
+            }
+        }
+    }
+}
+.swiper {
+max-width: 60%;
+height: 100%;
+margin:0 auto;
+overflow: unset;
+}
+
+.swiper-slide {
+background-position: center;
+background-size: cover;
+opacity: 0!important;
+}
+.swiper-slide-active{opacity: 1!important;}
+.swiper-slide img {
+display: block;
+width: 100%;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom:-10px!important;
+}
+.swiper-pagination-bullet{
+    width:30px;height:30px;
+    background-image: url("https://kyohyunkim.github.io/chromhearts/img/chrom_line_icon.svg");
+    background-repeat:no-repeat;
+    background-size: 30px;
+    background-position: center;
+    background-color: unset!important;
+    opacity: 1!important;
+}:root {
+    --swiper-theme-color:none!important;
+}
+.swiper-pagination-bullet-active{
+    width:30px;height:30px;
+    background-image: url("https://kyohyunkim.github.io/chromhearts/img/chrom_icon.svg");
+    background-repeat:no-repeat;
+    background-size: 30px;
+    background-position: center;
+    color:none;
+}:root {
+    --swiper-theme-color:none!important;
+}
+
+
+.chrome {
+    z-index: 9999;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    transform: translate(10px,10px);
+    background-image: url("https://kyohyunkim.github.io/chromhearts/img/chrom_line_icon.svg");
+    transition: .1s;
+}
 }

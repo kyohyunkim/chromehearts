@@ -57,7 +57,7 @@
                   <li class="price">₩350,000</li>
                   <li class="bag"><span>Add to bag</span></li>
                   <li class="details">
-                    <p>DETAILS <span>-</span></p>
+                    <p>DETAILS</p>
                     <ul>
                       <li>Magazine compilation Series 2, Volume 1-7 Box Set</li>
                     </ul>
@@ -80,6 +80,15 @@
             el: ".swiper-pagination",
             clickable: true,
           },
+        });
+
+        const details = document.querySelector(".details");
+        const ptag = document.querySelector(".details p");
+        const ultag = document.querySelector(".details ul");
+
+        details.addEventListener("click",()=>{
+          ptag.classList.toggle('active');
+          ultag.classList.toggle('active');
         });
 /*
         const circle = document.querySelector(".chrome");

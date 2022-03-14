@@ -397,7 +397,6 @@ footer ul .li3 a {
   header ul .nav .big_ul .big_li .small_ul {
     padding: 0 10px;
     height: 0;
-    opacity: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -407,10 +406,11 @@ footer ul .li3 a {
             flex-direction: column;
     -webkit-transition: .4s;
     transition: .4s;
+    display: none;
   }
   header ul .nav .big_ul .big_li .small_ul.active {
     height: auto;
-    opacity: 1;
+    display: block;
     padding: 10px 10px 0 10px;
   }
   header ul .nav .big_ul .big_li .small_ul li {
