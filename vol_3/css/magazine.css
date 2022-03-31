@@ -15,7 +15,7 @@ body{
         transform:translateY(-20%);
     }
 }
-#canvas{max-width: 1258px;margin: 0 auto;}
+#canvas{max-width: 1258px;margin: 0 auto;transform: scale(.9)!important;}
 .magazine-viewport{width:100%!important; max-height: 760px;}
 @media (min-width:701px)and (max-width:1200px){
 }
