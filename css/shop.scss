@@ -95,7 +95,7 @@ width: 100%;
 }
 
 @media (min-width:300px)and (max-width:1000px){
-footer{position:relative!important;}
+footer{position:relative!important; transform: translateX(50px);}
 .wrap{
     padding-bottom: 100px;
     transform: translateY(0px);
