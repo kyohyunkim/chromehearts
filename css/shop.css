@@ -161,9 +161,6 @@ img {
 }
 
 @media (min-width: 300px) and (max-width: 1000px) {
-  main {
-    height: 90vh;
-  }
   footer {
     position: relative !important;
   }
