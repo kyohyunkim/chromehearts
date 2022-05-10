@@ -113,7 +113,8 @@ img {
 
 .swiper-slide img {
   display: block;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .swiper-pagination-bullet {

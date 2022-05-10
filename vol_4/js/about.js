@@ -17,11 +17,11 @@ flipbook.turn({
         
         // Magazine width
 
-        width: 1114,
+        width: 900,
 
         // Magazine height
 
-        height: 760,
+        height: 600,
 
         // Duration in millisecond
 
@@ -45,7 +45,7 @@ flipbook.turn({
 
         // The number of pages
 
-        pages: 86,
+        pages: 68,
 
         // Events
 

@@ -16,8 +16,8 @@ footer div{padding:0 0 10px;}
         transform:translateY(-20%);
     }
 }
-#canvas{max-width: 1258px;margin: 0 auto;transform: scale(.9)!important;}
-.magazine-viewport{width:100%!important; max-height: 760px;}
+#canvas{max-width: 900px;margin: 0 auto;padding-top: 150px;}
+.magazine-viewport{width:100%!important; max-height: 600px;}
 @media (min-width:701px)and (max-width:1200px){
 }
 @media (min-width:300px)and (max-width:700px){
@@ -165,7 +165,7 @@ footer div{padding:0 0 10px;}
 .magazine-viewport .next-button,
 .magazine-viewport .previous-button{
 	width:22px;
-    height:760px;
+    height:600px;
 	position:absolute;
 	top:0;
 }

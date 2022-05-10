@@ -27,8 +27,7 @@ body{height:100vh; position: relative;}
 @media (min-width:1000px){
 main{
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    top:0;
 }
 }
 header{

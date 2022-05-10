@@ -17,11 +17,11 @@ flipbook.turn({
         
         // Magazine width
 
-        width: 1114,
+        width: 900,
 
         // Magazine height
 
-        height: 760,
+        height: 600,
 
         // Duration in millisecond
 
