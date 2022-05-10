@@ -22,7 +22,7 @@ footer div{padding:0 0 10px;}
 }
 @media (min-width:300px)and (max-width:700px){
 	.magazine-viewport{width:100%!important; height: 300px!important;}
-	#canvas{transform: scale(.9)!important;}
+	#canvas{transform: scale(.9)!important;padding-top:unset!important}
 }
 .magazine-viewport .container{
 	position:absolute;
